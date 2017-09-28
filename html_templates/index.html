@@ -1,9 +1,11 @@
-<!Documment Type-html->
+<!doctype html>
 <html>
 <head>
 	<title>Truck_Details</title>
 	<link rel="stylesheet" href="../static/bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/transport.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/custom.css">
+
 </head>
 <body ng-app="transportApp" ng-controller="transportCtrl">
 	<div class="navbar navbar-default">
@@ -12,9 +14,21 @@
 			<a class="navbar-brand" href="#">TransportSystem</a> </div>
 			<div class="navbar-collapse collapse navbar-responsive-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a ui-sref="login">Login</a></li>
-					<li><a ui-sref="TruckDetails">Truck Details</a></li>
-					<li><a ui-sref="Truckowner">Truck Owner</a></li>
+					<li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
+        					<ul class="dropdown-menu">
+        					  <li><a ui-sref="customer_reg">Register</a></li>
+        					  <li><a ui-sref="login">Login</a></li>
+        					</ul>
+      				</li>
+					<li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Truck Owner <span class="caret"></span></a>
+        					<ul class="dropdown-menu">
+        					  <li><a ui-sref="Owner_Reg">Register</a></li>
+        					  <li><a ui-sref="Truckowner">Login</a></li>
+        					</ul>
+      				</li>
+      				<!-- <li><a ui-sref="customer_dashboard">customer_dashboard</a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -27,5 +41,7 @@
 		<script src="../static/js/app.js"></script>
 		<script src="../static/js/transportController.js"></script>
 		<script src="../static/js/Truck_detailsCtrl.js"></script>
+		<script src="../static/js/customer_register.js"></script>
+		<script src="../static/js/loginCtrl.js"></script>
 	</body>
 </html>
