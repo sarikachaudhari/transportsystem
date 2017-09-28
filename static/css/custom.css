@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.loginmodal-container input[type=text], input[type=password] {
+.loginmodal-container input[type=text], .loginmodal-container input[type=password] {
   height: 44px;
   font-size: 16px;
   width: 100%;
@@ -110,4 +110,36 @@
   font-size: 1.8em;
   font-family: roboto;
 }
+
+
+
+/*/////////////////////////profile///////////////////*/
+
+.main-owner-dashboard-page  {
+  margin: 10px auto;
+  width: 800px;
+  height: 500px;
+  border:1px solid gray;
+}
+
+.Owner-Dashboard-Container-fluid{
+  margin-left: 250px;
+}
+
+.siderbar-Submenu li{
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

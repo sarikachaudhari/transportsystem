@@ -1,11 +1,7 @@
 angular.module('transportApp', ['transportApp.controllers','ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
-	.state('login', {
-		url: '/login',
-		templateUrl:'../html_templates/login.html',
-// controller:'firstCtrl'
-})
+
 // 	.state('TruckDetails', {
 // 		url: '/TruckDetails',
 // 		templateUrl:'../html_templates/Truck_Details.html',
@@ -18,10 +14,25 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 		controller:'transportCtrl'
 })
 
+	
 	.state('Truckowner', {
 		url: '/Truckowner',
 		templateUrl:'../html_templates/Owner_Login.html',
-		// controller:'transportCtrl'
+		controller:'transportCtrl'
+
+})
+
+	.state('OwnerDashboard', {
+		url: '/OwnerDashboard',
+		templateUrl:'../html_templates/OwnerDashboard.html',
+		controller:'OwnerDashboardCtrl'
+})
+
+	.state('OwnerRegDashboard', {
+		url: '/OwnerRegDashboard',
+		templateUrl:'../html_templates/Owner_Login.html',
+		controller:'OwnerRegDashboardCtrl'
+
 });
 
 
