@@ -1,15 +1,45 @@
-.label-style{
-	background-color: purple;
-	width: 250px;
-	height: 32px;
-	color: white;
-	padding:5px 0 0 20px;
-	border-radius: 0px;
-	margin-top: 20px;
+/*<!---login and registration css --->*/
+form { margin: 0px 10px; }
+h2 {
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
-.input-group{
-	width: 250px;
-	padding-right:20px;
+.container-register { max-width: 360px; }
+.divider {
+	text-align: center;
 	margin-top: 20px;
-	margin-bottom: 20px; 
+	margin-bottom: 5px;
+}
+.divider hr {
+	margin: 7px 0px;
+	width: 35%;
+}
+.left { float: left; }
+.right { float: right; }
+.white{
+	color:#000;
+	background-color:#fff;
+}
+.btn-facebook {
+	color: #ffffff;
+	-webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #2b4b90;
+	*background-color: #133783;
+	background-image: -moz-linear-gradient(top, #3b5998, #133783
+		);
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.btn-facebook.disabled,
+.btn-facebook[disabled] {
+	color: #ffffff;
+	background-color: #133783 !important;
+	*background-color: #102e6d !important;
+}
+.btn-facebook:active,
+.btn-facebook.active {
+	background-color: #0d2456 \9 !important;
 }

@@ -1,10 +1,15 @@
 angular.module('transportApp.controllers',[])
+<<<<<<< HEAD
 .controller('transportCtrl', function($rootScope, $log,$scope,$state,$stateParams){
 console.log("TransportCtrl loaded...");
 
 
 $scope.isloggedIn = false;
 
+=======
+.controller('transportCtrl', function($log,$scope,$state){
+console.log(" transportCtrl loaded...");
+>>>>>>> 173b4117a9a10feb3cfb53d6ca0e45bb7b5e8007
 
 $scope.owner_submit= { owner:null,
             email:null, 
@@ -25,6 +30,7 @@ $scope.owner_submit= { owner:null,
         	});
         console.log('user',$scope.owner_submit);
 }
+<<<<<<< HEAD
 
 $rootScope.$on('loginChange', function(data){
 $scope.isloggedIn = data;
@@ -42,4 +48,6 @@ $scope.login_submit_data = {
 		});
 		  console.log('user',$scope.login_submit_data);
 		}
+=======
+>>>>>>> 173b4117a9a10feb3cfb53d6ca0e45bb7b5e8007
 });

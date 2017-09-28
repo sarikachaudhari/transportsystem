@@ -1,7 +1,7 @@
 var app = angular.module("transportApp");
 app.controller("Truck_detailsCtrl",function($scope,$state){
 	console.log("truckdetailCtrl loaded...");
-	
+<<<<<<< HEAD
 	$scope.TruckDetails =
             { 'truckid':null, 'trucknumber':null, 'truckowner':null,
               'weightcapacity':null, 'fuel':null, 'carrymaterial':null
@@ -18,4 +18,6 @@ app.controller("Truck_detailsCtrl",function($scope,$state){
 		$scope.truccarrymaterialknumber=null;
 		// $scope.trucknumber=null;
 	}
+=======
+>>>>>>> 0ca19da620f5f52875965c215460b993bfa50806
 });
