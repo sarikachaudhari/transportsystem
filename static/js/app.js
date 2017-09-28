@@ -2,9 +2,9 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 	.state('login', {
-		url: '/login',
+		url: '/login/:username/:password',
 		templateUrl:'../html_templates/login.html',
-		// controller:'loginCtrl'
+		controller:'loginCtrl'
 	}) 
 	.state('customer_reg', {
 		url: '/customer_reg',

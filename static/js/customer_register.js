@@ -13,7 +13,7 @@ var app = angular.module("transportApp")
 		}
 		else{
 			console.log('$scope.user',$scope.user); 
-		// $state.go("login",{ username: $scope.user.username, password:$scope.user.password});
+		$state.go("login",{ username: $scope.user.username, password:$scope.user.password});
 		}
 	}
 
