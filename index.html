@@ -7,57 +7,50 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/custom.css">
 
 </head>
-<body ng-app="transportApp" ng-controller="transportCtrl">
-<div class="container-fluid">
-	<div class="hide-sidebar" ng-if="isloggedIn" style="position:absolute;left:0;width:250px;background-color: #ddd;height: 100vh;z-index: 10;">
-       
-        <div class="sidebar-Owner-header">
-            <h3 style="text-align: center">Transport System</h3>
-        </div>
-        <div class="siderbar-Submenu">
-        	<ul>
-        		<li><a href="#">Home</a></li>
-                <li><a href="../html_templTruck_Details.html/">New_Truck</a></li>
-                <li><a href="#">Truck_Details</a></li>
-                <li><a href="#">New_Trip</a></li>
-                <li><a href="#">Trip_Details/a>
-                <li><a href="#">Avaliable_Route</a></li>
-                <li><a href="#">Add_Route</a></li>
-                <li><a href="#">Stops</a></li>
-                <li><a href="#">Exit</a></li>
-        	</ul>
-        	
-        </div>
-	</div>
 
-	<ul class="nav navbar-nav">
-		<li>
-			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
-        					<ul class="dropdown-menu">
-        					  <li><a ui-sref="customer_reg">Register</a></li>
-        					  <li><a ui-sref="login">Login</a></li>
-        					</ul>
-      		</li>
-			<li>
-						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Truck Owner <span class="caret"></span></a>
-        					<ul class="dropdown-menu">
+	<body ng-app="transportApp" ng-controller="transportCtrl">
+		<div class="container-fluid">
+			<div class="hide-sidebar" ng-if="isloggedIn" style="position:absolute;left:0;width:250px;background-color: #ddd;height: 100vh;z-index: 10;">
+       
+        		<div class="sidebar-Owner-header">
+            		<h3 style="text-align: center">Transport System</h3>
+        		</div>
+        		<div class="siderbar-Submenu">
+        			<ul>
+        				<li><a href="#">Home</a></li>
+                		<li><a href="../html_templTruck_Details.html/">New_Truck</a></li>
+                		<li><a href="#">Truck_Details</a></li>
+                		<li><a href="#">New_Trip</a></li>
+                		<li><a href="#">Trip_Details/a>
+                		<li><a href="#">Avaliable_Route</a></li>
+                		<li><a href="#">Add_Route</a></li>
+                		<li><a href="#">Stops</a></li>
+                		<li><a href="#">Exit</a></li>
+        			</ul>
+        		</div>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+             				<li><a ui-sref="customer_reg">Register</a></li>
+        			  		<li><a ui-sref="login">Login</a></li>
+        				</ul>
+      				</li>
+      			</li>
+				<li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Truck Owner <span class="caret"></span></a>
+        				<ul class="dropdown-menu">
         					  <li><a ui-sref="Owner_Reg">Register</a></li>
         					  <li><a ui-sref="Truckowner">Login</a></li>
-        					 <!--  <li><a ui-sref="OwnerDashboard">OwnerDashboard</a></li> -->
-        					</ul>
-<<<<<<< HEAD:index.html
-      		</li>
-	</ul>
-</div>
-		
+        				</ul>
 
-=======
       				</li>
-      				<!-- <li><a ui-sref="customer_dashboard">customer_dashboard</a></li> -->
-				</ul>
-			</div>
+      			</li>
+			</ul>
 		</div>
->>>>>>> 173b4117a9a10feb3cfb53d6ca0e45bb7b5e8007:html_templates/index.html
+		
 		<ui-view></ui-view>
 		
 		<script src="../static/bower_components/angular/angular.min.js"></script>
@@ -67,16 +60,12 @@
 		<script src="../static/js/app.js"></script>
 		<script src="../static/js/transportController.js"></script>
 		<script src="../static/js/Truck_detailsCtrl.js"></script>
-<<<<<<< HEAD:index.html
 		<script src="../static/js/OwnerDashboardCtrl.js"></script>
 		<script src="../static/js/OwnerRegDashboardCtrl.js"></script>
 		<script src="../static/js/sidebar.js"></script>
 
-
-
-=======
 		<script src="../static/js/customer_register.js"></script>
 		<script src="../static/js/loginCtrl.js"></script>
->>>>>>> 173b4117a9a10feb3cfb53d6ca0e45bb7b5e8007:html_templates/index.html
+
 	</body>
 </html>

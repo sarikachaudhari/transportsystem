@@ -1,14 +1,14 @@
 angular.module('transportApp', ['transportApp.controllers','ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
-<<<<<<< HEAD
+
 
 // 	.state('TruckDetails', {
 // 		url: '/TruckDetails',
 // 		templateUrl:'../html_templates/Truck_Details.html',
 // 		controller:'Truck_detailsCtrl'
 // })
-=======
+
 	.state('login', {
 		url: '/login',
 		templateUrl:'../html_templates/login.html',
@@ -20,8 +20,6 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 		controller:'customerCtrl'
 	})
 
->>>>>>> 173b4117a9a10feb3cfb53d6ca0e45bb7b5e8007
-
 	.state('Owner_Reg', {
 		url: '/Owner_Reg',
 		templateUrl:'../html_templates/Owner_Reg.html',
@@ -32,7 +30,6 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 	.state('Truckowner', {
 		url: '/Truckowner',
 		templateUrl:'../html_templates/Owner_Login.html',
-<<<<<<< HEAD
 		controller:'transportCtrl'
 
 })
@@ -48,12 +45,7 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 		templateUrl:'../html_templates/Owner_Login.html',
 		controller:'OwnerRegDashboardCtrl'
 
-});
-
-=======
-		// controller:'transportCtrl'
-	})
->>>>>>> 173b4117a9a10feb3cfb53d6ca0e45bb7b5e8007
+})
 
 	.state('customer_dashboard', {
 		url: '/customer_dashboard',
@@ -61,5 +53,5 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 		//controller:'customer_dashboardCtrl'
 	});
 
-	$urlRouterProvider.otherwise('/login');
-}); //config ends
+	$urlRouterProvider.otherwise('/');
+}); 
