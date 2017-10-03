@@ -111,3 +111,35 @@
   font-family: roboto;
 }
 
+
+
+/*/////////////////////////profile///////////////////*/
+
+.main-owner-dashboard-page  {
+  margin: 10px auto;
+  width: 800px;
+  height: 500px;
+  border:1px solid gray;
+}
+
+.Owner-Dashboard-Container-fluid{
+  margin-left: 250px;
+}
+
+.siderbar-Submenu li{
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

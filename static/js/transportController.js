@@ -6,9 +6,8 @@ $scope.owner_submit= { owner:null,
             email:null, 
             contact:null,
             address:null,
-            maxtrcuk:null,
             city:null,
-            trucktype:null,
+            password:null,
             };
 
         $scope.saveData  = function() {
