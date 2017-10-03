@@ -4,4 +4,8 @@ var app = angular.module("transportApp")
 	console.log(" $stateParams",$stateParams);
 	$scope.username = $stateParams.username;
 	$scope.password = $stateParams.password;
+
+	$scope.login_customer = function(){
+		$state.go("customer_dashboard");
+	}
 });

@@ -1,1 +1,114 @@
-<h1>Wel-come</h1>
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-4 sidebar1">
+            <div class="logo">
+                <!-- <img src="http://lorempixel.com/output/people-q-g-64-64-1.jpg" class="img-responsive center-block" alt="Logo"> -->
+            </div>
+            <br>
+            <div class="left-navigation">
+                <ul class="list">
+                    <h5><strong>Services</strong></h5>
+                    <li ui-sref=>Home</li>
+                    <li>Login</li>
+                    <!-- <li></li>
+                    <li>Gym</li>
+                    <li>Art Class</li>
+                    <li>Hike Club</li> -->
+                </ul>
+
+                <br>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-8 main-content">
+            <!--Main content code to be written here --> 
+            <h1>Book your trip here...</h1>
+            <h3> Book with transportsystem and stay tension free</h3>
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Booking Form</legend>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="email">Email</label>   
+                      <div class="col-md-4">
+                          <input id="" name="email" type="text" placeholder="Enter your Email" class="form-control input-md" ng-model="user.email">
+                         <!--  <span class="help-block">help</span>   -->
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="contact">Contact No</label>  
+                      <div class="col-md-4">
+                          <input id="contact" name="contact" type="text" placeholder="Mobile No" class="form-control input-md"ng-model="user.contact" >
+                         <!--  <span class="help-block">help</span>   -->
+                      </div>
+                    </div>
+
+                  <!-- Select Basic -->
+                  <div class="form-group">
+                <label class="col-md-4 control-label" for="radius">Source</label>
+                <div class="col-md-4">
+                  <select id="radius" name="radius" class="form-control" ng-model="user.source">
+                    <option value="1">Mumbai</option>
+                    <option value="2">Pune</option>
+                    <option value="3">Aurangabad</option>
+                    <option value="4">Dhule</option>
+                    <option value="5">Nashik</option>
+                    <option value="6">Jalgaon</option>
+                </select>
+            </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group">
+            <label class="col-md-4 control-label" for="property_type" >Destination</label>
+            <div class="col-md-4">
+              <select id="property_type" name="property_type" class="form-control" ng-model="user.destination">
+               <option value="">Mumbai</option>
+               <option value="2">Pune</option>
+               <option value="3">Aurangabad</option>
+               <option value="4">Dhule</option>
+               <option value="5">Nashik</option>
+               <option value="6">Jalgaon</option>
+           </select>
+       </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="trucktype">Truck Type</label>
+              <div class="col-md-2">
+                <select id="trucktype" name="trucktype" class="form-control" ng-model="user.trucktype">
+                  <option value="1">Option one</option>
+                  <option value="2">Option two</option>
+              </select>
+          </div>
+      </div>
+
+      <!-- Select Basic -->
+      <div class="form-group">
+          <label class="col-md-4 control-label" for="Date">Date</label>
+          <div class="col-md-2">
+            <select id="Date" name="Date" class="form-control">
+              <option value="1">Option one</option>
+              <option value="2">Option two</option>
+          </select>
+      </div>
+  </div>
+
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="submit"></label>
+    <div class="col-md-4">
+      <button name="submit"class="btn btn-primary" ng-click="BookTrip()">Book Trip</button>
+
+      <button id="submit" name="submit" class="btn btn-danger" ng-click="CancleTrip()">Cancle Trip</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</div>
+</div>

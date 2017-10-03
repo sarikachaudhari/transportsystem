@@ -2,7 +2,7 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 	.state('login', {
-		url: '/login/:username/:password',
+		url: '/login',
 		templateUrl:'../html_templates/login.html',
 		controller:'loginCtrl'
 	}) 
@@ -25,11 +25,27 @@ angular.module('transportApp', ['transportApp.controllers','ui.router'])
 		// controller:'transportCtrl'
 	})
 
+	.state('owner_dashboard', {
+		url: '/owner_dashboard',
+		templateUrl:'../html_templates/owner_dashboard.html',
+		controller:'owner_dashboardCtrl'
+	})
+
 	.state('customer_dashboard', {
 		url: '/customer_dashboard',
 		templateUrl:'../html_templates/customer_dashboard.html',
-		//controller:'customer_dashboardCtrl'
+		controller:'customer_dashboardCtrl'
+	})
+	.state('Add_truck', {
+		url: '/Add_truck',
+		templateUrl:'../html_templates/Add_truck.html',
+		controller:'owner_dashboardCtrl'
+	})
+	.state('Trip_history', {
+		url: '/customeTrip_historyr_dashboard',
+		templateUrl:'../html_templates/Trip_history.html',
+		// controller:'customer_dashboardCtrl'
 	});
 
-	$urlRouterProvider.otherwise('/login');
+	$urlRouterProvider.otherwise('/');
 }); //config ends
